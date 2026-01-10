@@ -6,7 +6,7 @@ public class MatrixDiagonaleLElements {
 		
 		int arr[][] = new int[3][3];
 		int i,j;
-		System.out.println("");
+		System.out.println("Enter Element: -");
 		Scanner sc = new Scanner(System.in);
 		for(i = 0; i < 3; i++) {
 			for(j = 0; j < 3; j++) {
@@ -23,6 +23,5 @@ public class MatrixDiagonaleLElements {
 		}
 		
 	}
-	
 
 }
