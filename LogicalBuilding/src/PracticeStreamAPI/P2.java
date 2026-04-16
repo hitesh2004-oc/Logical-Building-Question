@@ -5,7 +5,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
+// Interview Level Question on Stream API
+// BAsic , Advance & Hard
 class Employees{
 	private int id;
 	private String name;
