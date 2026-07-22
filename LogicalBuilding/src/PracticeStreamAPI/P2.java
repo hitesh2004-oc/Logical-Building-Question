@@ -74,7 +74,15 @@ public class P2 {
 				(Employees::getSalary).reversed()).limit(3).forEach(i->System.out.println(i));
 		
 		//Q5. Sum transaction amounts and sort by date
-		
+		transactions.stream()
+        .collect(Collectors.groupingBy(
+                Transaction::getDate,
+                Collectors.summingDouble(Transaction::getAmount)))
+        .entrySet()
+        .stream()
+        .sorted(Map.Entry.comparingByKey())
+        .forEach(e ->
+                System.out.println(e.getKey() + " -> " + e.getValue()));
 		
 		
 		
