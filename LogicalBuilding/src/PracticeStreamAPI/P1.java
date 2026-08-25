@@ -54,12 +54,12 @@ public class P1 {
 		            new Employee(6, "Ankit", 40, "Finance", 120000)
 				
 				);
-//	ls.stream().filter(i->i.getDepartment().equals("HR")).forEach(i->System.out.println(i));
-//	Employee max =
-//	ls.stream()
-//    .max(Comparator.comparing(Employee::getSalary))
-//    .get();
-//	System.out.println(max);
+	ls.stream().filter(i->i.getDepartment().equals("HR")).forEach(i->System.out.println(i));
+	Employee max =
+	ls.stream()
+    .max(Comparator.comparing(Employee::getSalary))
+    .get();
+	System.out.println(max);
 //	
 //	double avg =ls.stream().mapToDouble(Employee::getSalary).average().getAsDouble();
 //    System.out.println(avg);
